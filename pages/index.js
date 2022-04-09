@@ -217,7 +217,7 @@ export default function Home() {
       {/* tab  */}
       <div className="w-full max-w-6xl px-2 py-16 sm:px-0 mx-auto">
         <Tab.Group>
-          <Tab.List className="flex flex-col bg-white md:flex-row">
+          <Tab.List className="flex flex-col bg-white md:flex-row justify-center items-center">
             {tabs.map((item, index) => {
               return (
                 <>
@@ -225,18 +225,18 @@ export default function Home() {
                     key={index}
                     className={({ selected }) =>
                       classNames(
-                        "w-full text-center max-w-xl min-h-min py-9 px-2 text-lg leading-5 font-normal text-black",
+                        "w-full text-center max-w-xl min-h-min py-4 md:py-9 px-2 text-lg leading-5 font-normal text-black",
                         "border",
                         selected
-                          ? "bg-white shadow text-purple-900 font-bold border-b-4 border-b-purple-700"
+                          ? "bg-white shadow text-purple-900 font-medium border-b-4 border-b-purple-700"
                           : " hover:text-purple-900 hover:font-medium"
                       )
                     }
                   >
-                    <div className="flex flex-col justify-center items-center gap-y-3">
+                    <div className="flex md:flex-col justify-start items-center gap-x-3 md:gap-x-0 md:justify-center md:items-center gap-y-3 flex-row">
                       <p>{item.icon}</p>
                       <span className={({selected})=>{
-                        classNames(selected?"font-medium text-center":"")
+                        classNames(selected?"text-lg text-center":"")
                       }}>{item.title}</span>
                     </div>
                   </Tab>
