@@ -217,11 +217,11 @@ export default function Home() {
       {/* tab  */}
       <div className="w-full max-w-6xl px-2 py-16 sm:px-0 mx-auto">
         <Tab.Group>
-          <Tab.List className="flex md:flex-row bg-white xs:flex-col">
+          <Tab.List className="flex flex-col bg-white md:flex-row">
             {tabs.map((item, index) => {
               return (
                 <>
-                  <Tab
+                  <Tab as="div"
                     key={index}
                     className={({ selected }) =>
                       classNames(
