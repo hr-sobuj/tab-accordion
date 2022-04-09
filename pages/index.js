@@ -225,7 +225,7 @@ export default function Home() {
                     key={index}
                     className={({ selected }) =>
                       classNames(
-                        "w-full max-w-xl min-h-min py-9 px-2 text-lg leading-5 font-normal text-black",
+                        "w-full text-center max-w-xl min-h-min py-9 px-2 text-lg leading-5 font-normal text-black",
                         "border",
                         selected
                           ? "bg-white shadow text-purple-900 font-bold border-b-4 border-b-purple-700"
@@ -236,7 +236,7 @@ export default function Home() {
                     <div className="flex flex-col justify-center items-center gap-y-3">
                       <p>{item.icon}</p>
                       <span className={({selected})=>{
-                        classNames(selected?"text-lg font-semibold":"")
+                        classNames(selected?"font-semibold text-center":"")
                       }}>{item.title}</span>
                     </div>
                   </Tab>
