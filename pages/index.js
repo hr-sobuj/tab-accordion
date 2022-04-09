@@ -182,32 +182,32 @@ export default function Home() {
     ],
     [
       {
-        title: "Habib1",
-        description: "Id quis id mollit et occaecat. Ad culpa sit et id deserunt duis non sunt deserunt consectetur velit mollit sunt in. Labore ut consectetur eiusmod ea cupidatat Lorem culpa voluptate. Minim voluptate sint elit duis sint ea fugiat anim. Minim aute ipsum occaecat officia sit exercitation proident id excepteur nostrud. In qui officia consectetur reprehenderit id minim cupidatat laboris.",
+        title: "t et occaecat. Ad culpa sit et id deserunt duis non sunt deserunt consectetur velit mollit sunt in.",
+        description: "Id quis id molli Labore ut consectetur eiusmod ea cupidatat Lorem culpa voluptate. Minim voluptate sint elit duis sint ea fugiat anim. Minim aute ipsum occaecat officia sit exercitation proident id excepteur nostrud. In qui officia consectetur reprehenderit id minim cupidatat laboris.",
       },
     ],
     [
       {
-        title: "Habib",
-        description: "Id quis id mollit et occaecat. Ad culpa sit et id deserunt duis non sunt deserunt consectetur velit mollit sunt in. Labore ut consectetur eiusmod ea cupidatat Lorem culpa voluptate. Minim voluptate sint elit duis sint ea fugiat anim. Minim aute ipsum occaecat officia sit exercitation proident id excepteur nostrud. In qui officia consectetur reprehenderit id minim cupidatat laboris.",
+        title: "te sint elit duis sint ea fugiat anim. Minim aute i",
+        description: "Id quis id mollit et occaecat. Ad culpa sit et id deserunt duis non sunt deserunt consectetur velit mollit sunt in. Labore ut consectetur eiusmod ea cupidatat Lorem culpa voluptate. Minim voluptapsum occaecat officia sit exercitation proident id excepteur nostrud. In qui officia consectetur reprehenderit id minim cupidatat laboris.",
       },
     ],
     [
       {
-        title: "Habib1",
-        description: "Id quis id mollit et occaecat. Ad culpa sit et id deserunt duis non sunt deserunt consectetur velit mollit sunt in. Labore ut consectetur eiusmod ea cupidatat Lorem culpa voluptate. Minim voluptate sint elit duis sint ea fugiat anim. Minim aute ipsum occaecat officia sit exercitation proident id excepteur nostrud. In qui officia consectetur reprehenderit id minim cupidatat laboris.",
+        title: " sint elit duis sint ea fugiat anim",
+        description: "Id quis id mollit et occaecat. Ad culpa sit et id deserunt duis non sunt deserunt consectetur velit mollit sunt in. Labore ut consectetur eiusmod ea cupidatat Lorem culpa voluptate. Minim voluptate. Minim aute ipsum occaecat officia sit exercitation proident id excepteur nostrud. In qui officia consectetur reprehenderit id minim cupidatat laboris.",
       },
     ],
     [
       {
-        title: "Habib",
-        description: "Id quis id mollit et occaecat. Ad culpa sit et id deserunt duis non sunt deserunt consectetur velit mollit sunt in. Labore ut consectetur eiusmod ea cupidatat Lorem culpa voluptate. Minim voluptate sint elit duis sint ea fugiat anim. Minim aute ipsum occaecat officia sit exercitation proident id excepteur nostrud. In qui officia consectetur reprehenderit id minim cupidatat laboris.",
+        title: " mollit sunt in. Labore ut consectetur eiusmod ea cupidatat Lorem culpa voluptate. Minim voluptate sint elit duis sint",
+        description: "Id quis id mollit et occaecat. Ad culpa sit et id deserunt duis non sunt deserunt consectetur velit ea fugiat anim. Minim aute ipsum occaecat officia sit exercitation proident id excepteur nostrud. In qui officia consectetur reprehenderit id minim cupidatat laboris.",
       },
     ],
     [
       {
-        title: "Habib1",
-        description: "Id quis id mollit et occaecat. Ad culpa sit et id deserunt duis non sunt deserunt consectetur velit mollit sunt in. Labore ut consectetur eiusmod ea cupidatat Lorem culpa voluptate. Minim voluptate sint elit duis sint ea fugiat anim. Minim aute ipsum occaecat officia sit exercitation proident id excepteur nostrud. In qui officia consectetur reprehenderit id minim cupidatat laboris.",
+        title: "t sunt in. Labore ut consec",
+        description: "Id quis id mollit et occaecat. Ad culpa sit et id deserunt duis non sunt deserunt consectetur velit mollitetur eiusmod ea cupidatat Lorem culpa voluptate. Minim voluptate sint elit duis sint ea fugiat anim. Minim aute ipsum occaecat officia sit exercitation proident id excepteur nostrud. In qui officia consectetur reprehenderit id minim cupidatat laboris.",
       },
     ],
   ];
@@ -217,7 +217,7 @@ export default function Home() {
       {/* tab  */}
       <div className="w-full max-w-6xl px-2 py-16 sm:px-0 mx-auto">
         <Tab.Group>
-          <Tab.List className="flex bg-white">
+          <Tab.List className="flex md:flex-row bg-white xs:flex-col">
             {tabs.map((item, index) => {
               return (
                 <>
@@ -236,7 +236,7 @@ export default function Home() {
                     <div className="flex flex-col justify-center items-center gap-y-3">
                       <p>{item.icon}</p>
                       <span className={({selected})=>{
-                        classNames(selected?"text-lg font-medium":"")
+                        classNames(selected?"text-lg font-semibold":"")
                       }}>{item.title}</span>
                     </div>
                   </Tab>
@@ -262,7 +262,7 @@ export default function Home() {
                           <Disclosure className="mb-5">
                             {({ open }) => (
                               <>
-                                <Disclosure.Button className={`flex justify-between w-full ${open?'py-6 px-6 mb-0 mt-5':'py-6 px-6 mb-5 mt-5'} text-lg font-normal text-left text-gray-900 bg-purple-100 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75`}>
+                                <Disclosure.Button className={`flex justify-between w-full ${open?'py-6 px-6 mb-0 mt-5':'py-6 px-6 mb-5 mt-5'} text-xl font-normal text-left text-gray-900 bg-purple-100 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75`}>
                                   <span>{item.title}</span>
                                   <ChevronUpIcon
                                     className={`${
@@ -270,7 +270,7 @@ export default function Home() {
                                     }  w-9 h-9 text-purple-700`}
                                   />
                                 </Disclosure.Button>
-                                <Disclosure.Panel className="px-6 pt-0 pb-2 text-sm text-gray-900 bg-purple-100 ">
+                                <Disclosure.Panel className="px-6 pt-0 pb-2 text-xl text-gray-900 bg-purple-100 ">
                                   {item.description}
                                 </Disclosure.Panel>
                               </>
