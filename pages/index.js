@@ -236,7 +236,7 @@ export default function Home() {
                     <div className="flex flex-col justify-center items-center gap-y-3">
                       <p>{item.icon}</p>
                       <span className={({selected})=>{
-                        classNames(selected?"font-semibold text-center":"")
+                        classNames(selected?"font-medium text-center":"")
                       }}>{item.title}</span>
                     </div>
                   </Tab>
@@ -246,7 +246,6 @@ export default function Home() {
           </Tab.List>
           <Tab.Panels className="mt-14">
             {accordion.map((accordionTab) => {
-              console.log(typeof accordionTab);
               return (
                 <>
                   <Tab.Panel
