@@ -225,7 +225,7 @@ export default function Home() {
                     key={index}
                     className={({ selected }) =>
                       classNames(
-                        "w-full text-center max-w-xl min-h-min py-4 md:py-9 px-2 text-lg leading-5 font-normal text-black",
+                        "w-full text-center max-w-xl md:h-44 py-4 md:py-9 px-2 text-lg leading-5 font-normal text-black",
                         "border",
                         selected
                           ? "bg-white shadow text-purple-900 font-medium border-b-4 border-b-purple-700"
