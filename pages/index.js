@@ -225,7 +225,7 @@ export default function Home() {
                     key={index}
                     className={({ selected }) =>
                       classNames(
-                        "w-full text-center max-w-xl md:h-44 py-4 md:py-9 px-2 text-lg leading-5 font-normal text-black",
+                        "w-full cursor-pointer text-center max-w-xl md:h-44 py-4 md:py-9 px-2 text-lg leading-5 font-normal text-black",
                         "border",
                         selected
                           ? "bg-white shadow text-purple-900 font-medium border-b-4 border-b-purple-700"
@@ -266,7 +266,7 @@ export default function Home() {
                                   <ChevronUpIcon
                                     className={`${
                                       open ? "transform rotate-180" : ""
-                                    }  w-16 h-16 sm:w-10 sm:h-10 md:w-9 md:h-9  text-purple-700`}
+                                    }  w-16 h-16 sm:w-10 sm:h-10 md:w-9 md:h-9 text-purple-700`}
                                   />
                                 </Disclosure.Button>
                                 <Disclosure.Panel className="px-6 pt-0 pb-2 text-xl text-gray-900 bg-purple-100 ">
